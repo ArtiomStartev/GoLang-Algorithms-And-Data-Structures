@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="" />
+    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/GO-Algorithms-And-Data-Structures.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm_dijkstra.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/breadth_first_search(BFS).go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bubble_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cache.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depth_first_search(DFS).go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iterative_binary_search.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iterative_tree_sum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kruskal (MST).go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linear_search.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/minimum_vertex_cover.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prim (MST).go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quick_sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recursive_binary_search.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recursive_tree_sum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selection_sort.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,38 +41,52 @@
     </option>
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ArtiomStartev/GoLang-Algorithms-And-Data-Structures.git",
+    "accountId": "5ac41cbe-f6bb-48e9-a1aa-e0274bfdb162"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2gM2qbKHFUjRZvlwj3u5vNx6avv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go Build.go build breadth_first_search(BFS).go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build iterative_tree_sum.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build kruskal (MST).go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build minimum_vertex_cover.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build quick_sort.go.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/artiomstartev/Desktop/GO-Algorithms-And-Data-Structures&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build breadth_first_search(BFS).go.executor": "Run",
+    "Go Build.go build iterative_tree_sum.go.executor": "Run",
+    "Go Build.go build kruskal (MST).go.executor": "Run",
+    "Go Build.go build minimum_vertex_cover.go.executor": "Run",
+    "Go Build.go build quick_sort.go.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/artiomstartev/Desktop/GO-Algorithms-And-Data-Structures",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Go Build.go build kruskal (MST).go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="GO-Algorithms-And-Data-Structures" />
@@ -137,12 +174,15 @@
       <workItem from="1715744849723" duration="351000" />
       <workItem from="1715788094076" duration="4725000" />
       <workItem from="1715865550419" duration="7221000" />
-      <workItem from="1716039443166" duration="8060000" />
+      <workItem from="1716039443166" duration="8335000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
