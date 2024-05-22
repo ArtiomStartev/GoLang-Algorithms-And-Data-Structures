@@ -5,14 +5,14 @@ import (
 )
 
 /**
- * Finds a minimum vertex cover in a graph.
+ * Finds a maximal independent set in a graph.
  * @param graph map[string][]string - The graph represented as an adjacency list.
- * @returns []string - A minimum vertex cover of the graph.
+ * @returns []string - A slice representing the vertices of a maximal independent set.
  */
 
-func findMinimumVertexCover(graph map[string][]string) []string {
-	// Initialize an empty slice for the minimum vertex cover
-	var vertexCover []string
+func findMaximalIndependentSet(graph map[string][]string) []string {
+	// Initialize an empty slice for the independent set
+	var independentSet []string
 
 	for len(graph) > 0 {
 		// Step 1: Select a vertex of minimum degree
@@ -27,14 +27,29 @@ func findMinimumVertexCover(graph map[string][]string) []string {
 		}
 
 		// Append the selected vertex to the vertex cover slice
-		vertexCover = append(vertexCover, minDegreeVertex)
+		independentSet = append(independentSet, minDegreeVertex)
 
 		// Step 2: Remove the selected vertex and its neighborhood from the graph
 		for _, neighbor := range graph[minDegreeVertex] {
+			for _, vertex := range graph[neighbor] {
+				graph[vertex] = filter(graph[vertex], neighbor)
+			}
 			delete(graph, neighbor) // Remove the adjacent vertices
 		}
 		delete(graph, minDegreeVertex) // Remove the selected vertex
 	}
 
-	return vertexCover
+	return independentSet
+}
+
+// filter removes all instances of target from slice
+func filter(slice []string, target string) []string {
+	result := []string{}
+	for _, item := range slice {
+		if item != target {
+			result = append(result, item)
+		}
+	}
+	
+	return result
 }
