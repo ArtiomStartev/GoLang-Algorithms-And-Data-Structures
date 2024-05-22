@@ -88,10 +88,8 @@ The graph Depth-First Search (DFS) on a graph, starts from a specified vertex. I
 Utilizing recursion, it systematically visits each vertex, marking it as visited and adding it to the traversal order. Through the recursive dfs function, it traverses the graph, ensuring that each adjacent vertex is visited only once.
 Finally, it returns the DFS traversal order, providing insight into the order in which vertices were visited during the traversal.
 
-### Minimum Vertex Cover
-The Minimum Vertex Cover algorithm is designed to identify a minimum vertex cover within a graph, aiming to select the smallest subset of vertices that covers all edges in the graph.
-It operates iteratively, targeting the vertex of minimum degree in each iteration to optimize the cover selection. By repeatedly selecting and removing vertices and their adjacent neighbors from the graph, it gradually constructs the minimum vertex cover set.
-This algorithm efficiently tackles the vertex cover problem by strategically identifying and including vertices essential for covering the edges of the graph, ultimately returning a set representing the minimum vertex cover.
+### Maximal Independent Set
+The Maximal Independent Set algorithm aims to find an independent set within a graph. An independent set is a subset of vertices such that no two vertices in the set are adjacent. The algorithm operates iteratively, selecting a vertex of minimum degree in each iteration to ensure the independence of the set. By repeatedly selecting and removing vertices and their adjacent neighbors from the graph, it constructs a maximal independent set. This approach effectively identifies and includes vertices that can coexist without direct connections, ultimately returning a set representing the maximal independent set.
 
 ### Dijkstra's Algorithm
 Dijkstra's algorithm, efficiently computes the shortest paths from a specified starting node to all other nodes within a weighted graph. Initially, it sets all node distances to infinity except for the starting node, which is set to zero.
