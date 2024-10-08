@@ -1,4 +1,4 @@
-package main
+package independent_set
 
 import (
 	"math"
@@ -50,6 +50,6 @@ func filter(slice []string, target string) []string {
 			result = append(result, item)
 		}
 	}
-	
+
 	return result
 }

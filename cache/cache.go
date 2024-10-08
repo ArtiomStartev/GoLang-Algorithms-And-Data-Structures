@@ -1,4 +1,4 @@
-package main
+package cache
 
 /**
  * Higher-order function to cache results of another function.

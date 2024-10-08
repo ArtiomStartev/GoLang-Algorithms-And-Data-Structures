@@ -1,4 +1,4 @@
-package main
+package iterative_binary_search
 
 /**
  * Iterative function to implement Binary Search

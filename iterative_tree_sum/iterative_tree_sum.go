@@ -1,4 +1,4 @@
-package main
+package iterative_tree_sum
 
 /**
  * Performs an iterative depth-first traversal of a tree and computes the sum of all node values.

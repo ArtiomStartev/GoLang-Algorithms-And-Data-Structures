@@ -1,4 +1,4 @@
-package main
+package bubble_sort
 
 /**
  * Sorts a slice in ascending order using the Bubble Sort algorithm.

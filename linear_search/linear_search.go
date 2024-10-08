@@ -1,4 +1,4 @@
-package main
+package linear_search
 
 /**
  * Linear search function to find the index of a target element in a slice.

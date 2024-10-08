@@ -1,4 +1,4 @@
-package main
+package quick_sort
 
 /**
  * Sorts a slice in ascending order using the Quick Sort algorithm.

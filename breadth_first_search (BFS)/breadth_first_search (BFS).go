@@ -1,4 +1,4 @@
-package main
+package breadth_first_search
 
 /**
  * Performs Breadth-First Search on a graph starting from a specified vertex.

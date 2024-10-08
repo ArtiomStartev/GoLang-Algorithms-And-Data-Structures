@@ -1,11 +1,11 @@
-package main
+package recursive_tree_sum
 
-type TreeNode struct {
+type Node struct {
 	Value    int
-	Children []TreeNode
+	Children []Node
 }
 
-func recursiveTreeSum(tree []TreeNode) int {
+func recursiveTreeSum(tree []Node) int {
 	var sum int
 
 	for _, node := range tree {

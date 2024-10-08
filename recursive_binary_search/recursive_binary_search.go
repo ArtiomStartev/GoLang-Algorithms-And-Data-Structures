@@ -1,4 +1,4 @@
-package main
+package recursive_binary_search
 
 /**
  * Recursively searches for a target element in a sorted slice using the Binary Search algorithm.

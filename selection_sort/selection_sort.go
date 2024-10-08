@@ -1,4 +1,4 @@
-package main
+package selection_sort
 
 /**
  * Sorts a slice in ascending order using the Selection Sort algorithm.

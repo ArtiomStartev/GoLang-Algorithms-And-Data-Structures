@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/GO-Algorithms-And-Data-Structures.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm_dijkstra.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/breadth_first_search(BFS).go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bubble_sort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cache.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/depth_first_search(DFS).go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iterative_binary_search.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iterative_tree_sum.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kruskal (MST).go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linear_search.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minimum_vertex_cover.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prim (MST).go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quick_sort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recursive_binary_search.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recursive_tree_sum.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selection_sort.go" afterDir="false" />
-    </list>
+    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,12 +21,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ArtiomStartev/GoLang-Algorithms-And-Data-Structures.git",
-    "accountId": "5ac41cbe-f6bb-48e9-a1aa-e0274bfdb162"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ArtiomStartev/GoLang-Algorithms-And-Data-Structures.git&quot;,
+    &quot;accountId&quot;: &quot;5ac41cbe-f6bb-48e9-a1aa-e0274bfdb162&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -76,6 +53,7 @@
     "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
+    "ignore_missing_gitignore": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/artiomstartev/Desktop/GO-Algorithms-And-Data-Structures",
     "node.js.detected.package.eslint": "true",
@@ -87,6 +65,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/selection_sort" />
+      <recent name="$PROJECT_DIR$/recursive_tree_sum" />
+      <recent name="$PROJECT_DIR$/recursive_binary_search" />
+      <recent name="$PROJECT_DIR$/quick_sort" />
+      <recent name="$PROJECT_DIR$/prim (MST)" />
+    </key>
+  </component>
   <component name="RunManager" selected="Go Build.go build kruskal (MST).go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="GO-Algorithms-And-Data-Structures" />

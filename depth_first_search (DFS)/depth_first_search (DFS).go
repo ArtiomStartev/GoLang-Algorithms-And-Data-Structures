@@ -1,4 +1,4 @@
-package main
+package depth_first_search
 
 /**
  * Performs Depth-First Search on a graph starting from a specified vertex.
