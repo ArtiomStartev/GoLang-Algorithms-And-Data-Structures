@@ -29,6 +29,9 @@ This algorithm is particularly useful in scenarios where a sorted dataset needs 
 A tree is a kind of data structure that is used to represent the data in hierarchical form. It can be defined as a collection of objects or entities called as nodes that are linked together to simulate a hierarchy. Tree is a non-linear data structure as the data in a tree is not stored linearly or sequentially.
 A Binary Search Tree is a data structure used in computer science for organizing and storing data in a sorted manner. Each node in a Binary Search Tree has at most two children, a left child and a right child, with the left child containing values less than the parent node and the right child containing values greater than the parent node. This hierarchical structure allows for efficient searching, insertion, and deletion operations on the data stored in the tree.
 
+### Exponential Search
+Exponential Search is a searching algorithm designed to find an element in a sorted array. It’s named “exponential” because of the way it goes about searching for an element. This method has a time complexity of O(log n), which means it’s very efficient. The Exponential Search uses the Binary Search algorithm but in a different way. It starts with an element of the array and compares it with the target. If the target is greater, it doubles the number of elements taken from the array. Typically this number is called bound. If the bound is greater than the target, we search the array from bound /2 to bound. Now that we have a range, we can perform a binary search within that range.
+
 ### Selection Sort
 The Selection Sort algorithm, sorts a slice in ascending order. This algorithm works by repeatedly finding the minimum element from the unsorted part of the slice and placing it at the beginning of the sorted portion.
 It iterates through the slice, selecting the smallest element in each iteration and swapping it with the element at the current position.
