@@ -9,7 +9,7 @@ package recursive_binary_search
  * @returns int - The index of the target element if found, otherwise -1
  */
 
-func recursiveBinarySearch(slice []int, target, start, end int) int {
+func RecursiveBinarySearch(slice []int, target, start, end int) int {
 	// Calculate the middle index of the current search range
 	middle := (start + end) / 2
 
@@ -20,12 +20,12 @@ func recursiveBinarySearch(slice []int, target, start, end int) int {
 
 	// If the middle element is greater than the target, search in the left half
 	if slice[middle] > target {
-		return recursiveBinarySearch(slice, target, start, middle-1)
+		return RecursiveBinarySearch(slice, target, start, middle-1)
 	}
 
 	// If the middle element is less than the target, search in the right half
 	if slice[middle] < target {
-		return recursiveBinarySearch(slice, target, middle+1, end)
+		return RecursiveBinarySearch(slice, target, middle+1, end)
 	}
 
 	// Return -1 if the target element is not found

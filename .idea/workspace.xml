@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exponential_search/exponential_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/exponential_search/exponential_search.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iterative_binary_search/iterative_binary_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/iterative_binary_search/iterative_binary_search.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linear_search/linear_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/linear_search/linear_search.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive_binary_search/recursive_binary_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/recursive_binary_search/recursive_binary_search.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +180,7 @@
       <workItem from="1715788094076" duration="4725000" />
       <workItem from="1715865550419" duration="7221000" />
       <workItem from="1716039443166" duration="8335000" />
-      <workItem from="1728586180219" duration="3182000" />
+      <workItem from="1728586180219" duration="4120000" />
     </task>
     <servers />
   </component>
