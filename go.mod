@@ -1,3 +1,3 @@
-module github.com/ArtiomStartev/GoLang-Algorithms-And-Data-Structures
+module algorithms
 
 go 1.23.1

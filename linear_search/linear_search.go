@@ -7,7 +7,7 @@ package linear_search
  * @returns int - The index of the target element if found, otherwise -1
  */
 
-func linearSearch(slice []int, target int) int {
+func LinearSearch(slice []int, target int) int {
 	// Iterate through each element of the slice
 	for i := 0; i < len(slice); i++ {
 		// If the current element is equal to the target, return its index

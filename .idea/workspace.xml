@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="" />
+    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iterative_binary_search/iterative_binary_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/iterative_binary_search/iterative_binary_search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear_search/linear_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/linear_search/linear_search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +27,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ArtiomStartev"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ArtiomStartev/GoLang-Algorithms-And-Data-Structures.git&quot;,
@@ -42,6 +54,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build algorithms.executor": "Run",
     "Go Build.go build breadth_first_search(BFS).go.executor": "Run",
     "Go Build.go build iterative_tree_sum.go.executor": "Run",
     "Go Build.go build kruskal (MST).go.executor": "Run",
@@ -55,7 +68,7 @@
     "go.import.settings.migrated": "true",
     "ignore_missing_gitignore": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/artiomstartev/Desktop/GO-Algorithms-And-Data-Structures",
+    "last_opened_file_path": "/Users/artiomstartev/Desktop/algorithms",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +87,7 @@
       <recent name="$PROJECT_DIR$/prim (MST)" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build kruskal (MST).go">
+  <component name="RunManager" selected="Go Build.go build algorithms">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="GO-Algorithms-And-Data-Structures" />
       <working_directory value="$PROJECT_DIR$" />
@@ -84,20 +97,13 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build breadth_first_search(BFS).go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build algorithms" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GO-Algorithms-And-Data-Structures" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
+      <kind value="PACKAGE" />
+      <package value="algorithms" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/breadth_first_search(BFS).go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build iterative_tree_sum.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="GO-Algorithms-And-Data-Structures" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/iterative_tree_sum.go" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build kruskal (MST).go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -124,6 +130,15 @@
       <filePath value="$PROJECT_DIR$/quick_sort.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build utils.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GO-Algorithms-And-Data-Structures" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="github.com/ArtiomStartev/GoLang-Algorithms-And-Data-Structures" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/utils/utils.go" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="GO-Algorithms-And-Data-Structures" />
       <working_directory value="$PROJECT_DIR$" />
@@ -136,6 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build algorithms" />
+        <item itemvalue="Go Build.go build utils.go" />
         <item itemvalue="Go Build.go build kruskal (MST).go" />
       </list>
     </recent_temporary>
@@ -143,8 +160,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
       </set>
     </attachedChunks>
   </component>
@@ -162,6 +179,7 @@
       <workItem from="1715788094076" duration="4725000" />
       <workItem from="1715865550419" duration="7221000" />
       <workItem from="1716039443166" duration="8335000" />
+      <workItem from="1728586180219" duration="3182000" />
     </task>
     <servers />
   </component>

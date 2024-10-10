@@ -7,7 +7,7 @@ package iterative_binary_search
  * @returns int - The index of the target value if found, otherwise -1
  */
 
-func iterativeBinarySearch(slice []int, target int) int {
+func IterativeBinarySearch(slice []int, target int) int {
 	var start int
 	end := len(slice) - 1
 
