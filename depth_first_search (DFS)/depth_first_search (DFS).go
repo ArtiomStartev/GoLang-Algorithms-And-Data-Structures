@@ -8,7 +8,7 @@ package depth_first_search
  * @param visited map[string]bool - Map to keep track of visited vertices
  */
 
-func dfs(graph map[string][]string, vertex string, traversalOrder []string, visited map[string]bool) {
+func dfs(graph map[string][]string, vertex string, traversalOrder []string, visited map[string]bool) []string {
 	traversalOrder = append(traversalOrder, vertex) // Add the current vertex to the traversal order
 	visited[vertex] = true                          // Mark the current vertex as visited
 
@@ -18,9 +18,12 @@ func dfs(graph map[string][]string, vertex string, traversalOrder []string, visi
 	// Visit all adjacent vertices that have not been visited
 	for _, neighbor := range neighbors {
 		if !visited[neighbor] {
-			dfs(graph, neighbor, traversalOrder, visited)
+			traversalOrder = dfs(graph, neighbor, traversalOrder, visited)
 		}
 	}
+
+	// Return the complete traversal order
+	return traversalOrder
 }
 
 // Function to perform DFS traversal on the graph
@@ -32,8 +35,5 @@ func dfsTraversal(graph map[string][]string, startVertex string) []string {
 	visited := make(map[string]bool)
 
 	// Perform DFS traversal from the start vertex
-	dfs(graph, startVertex, traversalOrder, visited)
-
-	// Return the DFS traversal order
-	return traversalOrder
+	return dfs(graph, startVertex, traversalOrder, visited)
 }

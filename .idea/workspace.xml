@@ -6,16 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exponential_search/exponential_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/exponential_search/exponential_search.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iterative_binary_search/iterative_binary_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/iterative_binary_search/iterative_binary_search.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linear_search/linear_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/linear_search/linear_search.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive_binary_search/recursive_binary_search.go" beforeDir="false" afterPath="$PROJECT_DIR$/recursive_binary_search/recursive_binary_search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/depth_first_search (DFS)/depth_first_search (DFS).go" beforeDir="false" afterPath="$PROJECT_DIR$/depth_first_search (DFS)/depth_first_search (DFS).go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,18 +27,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ArtiomStartev"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ArtiomStartev&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ArtiomStartev/GoLang-Algorithms-And-Data-Structures.git&quot;,
     &quot;accountId&quot;: &quot;5ac41cbe-f6bb-48e9-a1aa-e0274bfdb162&quot;
   }
 }</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -62,6 +62,7 @@
     "Go Build.go build minimum_vertex_cover.go.executor": "Run",
     "Go Build.go build quick_sort.go.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
@@ -69,12 +70,13 @@
     "go.import.settings.migrated": "true",
     "ignore_missing_gitignore": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/artiomstartev/Desktop/algorithms",
+    "last_opened_file_path": "/Users/artiomstartev/Desktop/GoLang-Algorithms-And-Data-Structures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
     "vue.rearranger.settings.migration": "true"
   }
@@ -87,6 +89,17 @@
       <recent name="$PROJECT_DIR$/quick_sort" />
       <recent name="$PROJECT_DIR$/prim (MST)" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="GoApplicationRunConfiguration" />
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Go Build.go build algorithms">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -161,8 +174,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
       </set>
     </attachedChunks>
   </component>
@@ -181,6 +194,7 @@
       <workItem from="1715865550419" duration="7221000" />
       <workItem from="1716039443166" duration="8335000" />
       <workItem from="1728586180219" duration="4120000" />
+      <workItem from="1744315047790" duration="112000" />
     </task>
     <servers />
   </component>
