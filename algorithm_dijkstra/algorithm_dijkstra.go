@@ -17,7 +17,7 @@ func dijkstra(graph map[string]map[string]int, startNode string) map[string]int 
 
 	// Initialize distances map with all nodes set to the maximum integer value except the start node
 	distances := make(map[string]int)
-	for node, _ := range graph {
+	for node := range graph {
 		queue = append(queue, node)
 
 		if node == startNode {
@@ -45,13 +45,13 @@ func dijkstra(graph map[string]map[string]int, startNode string) map[string]int 
 			// Update distance if a shorter path is found
 			if totalDistance < distances[neighbor] {
 				distances[neighbor] = totalDistance
-
-				// Sort the queue again based on updated distances
-				sort.Slice(queue, func(i, j int) bool {
-					return distances[queue[i]] < distances[queue[j]]
-				})
 			}
 		}
+
+		// Sort the queue again based on updated distances
+		sort.Slice(queue, func(i, j int) bool {
+			return distances[queue[i]] < distances[queue[j]]
+		})
 	}
 
 	return distances

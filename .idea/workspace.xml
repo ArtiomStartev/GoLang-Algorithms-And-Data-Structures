@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/depth_first_search (DFS)/depth_first_search (DFS).go" beforeDir="false" afterPath="$PROJECT_DIR$/depth_first_search (DFS)/depth_first_search (DFS).go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_dijkstra/algorithm_dijkstra.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_dijkstra/algorithm_dijkstra.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,36 +51,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Build.go build algorithms.executor": "Run",
-    "Go Build.go build breadth_first_search(BFS).go.executor": "Run",
-    "Go Build.go build iterative_tree_sum.go.executor": "Run",
-    "Go Build.go build kruskal (MST).go.executor": "Run",
-    "Go Build.go build minimum_vertex_cover.go.executor": "Run",
-    "Go Build.go build quick_sort.go.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "ignore_missing_gitignore": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/artiomstartev/Desktop/GoLang-Algorithms-And-Data-Structures",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build algorithms.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build breadth_first_search(BFS).go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build iterative_tree_sum.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build kruskal (MST).go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build minimum_vertex_cover.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build quick_sort.go.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/artiomstartev/Desktop/GoLang-Algorithms-And-Data-Structures&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/selection_sort" />
@@ -195,6 +195,7 @@
       <workItem from="1716039443166" duration="8335000" />
       <workItem from="1728586180219" duration="4120000" />
       <workItem from="1744315047790" duration="112000" />
+      <workItem from="1746082098305" duration="102000" />
     </task>
     <servers />
   </component>
