@@ -1,40 +1,30 @@
 package quick_sort
 
-/**
- * Sorts a slice in ascending order using the Quick Sort algorithm.
- * @param slice []int - The slice to be sorted
- * @returns []int - The sorted slice
- */
-
-func quickSort(slice []int) []int {
-	// Base case: If the slice has 0 or 1 element, it is already sorted
-	if len(slice) <= 1 {
-		return slice
+// QuickSort performs a quick sort on the given array of integers
+func QuickSort(arr []int) {
+	if len(arr) <= 1 {
+		return
 	}
 
-	// Choose a pivot index (middle element)
-	pivotIndex := len(slice) / 2
+	pivotIndex := partition(arr)
 
-	less := make([]int, 0)
-	greater := make([]int, 0)
+	QuickSort(arr[:pivotIndex])
+	QuickSort(arr[pivotIndex+1:])
+}
 
-	for i := 0; i < len(slice); i++ {
-		// Skip the pivot element
-		if i == pivotIndex {
-			continue
-		}
+// partition partitions the array around a pivot element
+func partition(arr []int) int {
+	pivotIndex := len(arr) - 1
+	i := -1
 
-		// If the element is less than the pivot, append it to the 'less' slice
-		if slice[i] < slice[pivotIndex] {
-			less = append(less, slice[i])
-		}
-
-		// If the element is greater than the pivot, append it to the 'greater' slice
-		if slice[i] > slice[pivotIndex] {
-			greater = append(greater, slice[i])
+	for j := 0; j < pivotIndex; j++ {
+		if arr[j] <= arr[pivotIndex] {
+			i++
+			arr[i], arr[j] = arr[j], arr[i]
 		}
 	}
 
-	// Recursively sort the 'less' and 'greater' slices and combine them with the pivot element
-	return append(append(quickSort(less), slice[pivotIndex]), quickSort(greater)...)
+	arr[i+1], arr[pivotIndex] = arr[pivotIndex], arr[i+1]
+
+	return i + 1
 }

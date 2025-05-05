@@ -1,29 +1,20 @@
 package selection_sort
 
-/**
- * Sorts a slice in ascending order using the Selection Sort algorithm.
- * @param slice []int - The slice to be sorted
- * @returns []int The sorted slice
- */
+// SelectionSort performs a selection sort on the given array of integers
+func SelectionSort(arr []int) []int {
+	for i := 0; i < len(arr); i++ {
+		minIndex := i
 
-func selectionSort(slice []int) []int {
-	// Outer loop iterates through each element of the slice
-	for i := 0; i < len(slice); i++ {
-		minIndex := i // Initialize minIndex to the current index i
-
-		// Inner loop iterates through the unsorted part of the slice
-		for j := i + 1; j < len(slice); j++ {
-			// Update minIndex if a smaller element is found
-			if slice[j] < slice[minIndex] {
+		for j := i + 1; j < len(arr); j++ {
+			if arr[j] < arr[minIndex] {
 				minIndex = j
 			}
 		}
 
-		// If minIndex is different from i, swap the elements at indices i and minIndex
 		if i != minIndex {
-			slice[i], slice[minIndex] = slice[minIndex], slice[i]
+			arr[i], arr[minIndex] = arr[minIndex], arr[i]
 		}
 	}
 
-	return slice // Return the sorted slice
+	return arr
 }

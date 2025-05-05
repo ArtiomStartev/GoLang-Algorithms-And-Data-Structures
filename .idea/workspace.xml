@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="">
+    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="adjusted search algorithms">
+      <change afterPath="$PROJECT_DIR$/merge_sort/merge_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithm_dijkstra/algorithm_dijkstra.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_dijkstra/algorithm_dijkstra.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bubble_sort/bubble_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/bubble_sort/bubble_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cache/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/cache/cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kruskal (MST)/kruskal (MST).go" beforeDir="false" afterPath="$PROJECT_DIR$/kruskal (MST)/kruskal (MST).go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prim (MST)/prim (MST).go" beforeDir="false" afterPath="$PROJECT_DIR$/prim (MST)/prim (MST).go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quick_sort/quick_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/quick_sort/quick_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selection_sort/selection_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/selection_sort/selection_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +48,9 @@
     &quot;accountId&quot;: &quot;5ac41cbe-f6bb-48e9-a1aa-e0274bfdb162&quot;
   }
 }</component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -66,6 +78,7 @@
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
@@ -76,8 +89,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -174,8 +188,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>
@@ -196,7 +210,17 @@
       <workItem from="1728586180219" duration="4120000" />
       <workItem from="1744315047790" duration="112000" />
       <workItem from="1746082098305" duration="102000" />
+      <workItem from="1746460600950" duration="669000" />
     </task>
+    <task id="LOCAL-00001" summary="adjusted search algorithms">
+      <option name="closed" value="true" />
+      <created>1746448766668</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746448766668</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +228,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
+    <MESSAGE value="adjusted search algorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted search algorithms" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
