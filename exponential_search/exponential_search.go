@@ -2,23 +2,20 @@ package exponential_search
 
 import "algorithms/recursive_binary_search"
 
-func exponentialSearch(arr []int, target int) int {
-	// Return -1 if the array is empty
-	if len(arr) == 0 {
-		return -1
-	}
-
-	// Return the index of the target element if found
-	if arr[0] == target {
+// ExponentialSearch performs an exponential search on a sorted array of integers
+func ExponentialSearch(arr []int, x int) int {
+	if arr[0] == x {
 		return 0
 	}
 
-	// Find the range for binary search by repeated doubling
 	i := 1
-	for i < len(arr) && arr[i] <= target {
+	for i < len(arr) && arr[i] <= x {
+		if i >= len(arr)/2 { // Check for possible overflow
+			i = len(arr)
+			break
+		}
 		i *= 2
 	}
 
-	// Perform binary search in the range [i/2, min(i, len(arr))]
-	return recursive_binary_search.RecursiveBinarySearch(arr, target, i/2, min(i, len(arr)))
+	return recursive_binary_search.RecursiveBinarySearch(arr, x, i/2, i)
 }

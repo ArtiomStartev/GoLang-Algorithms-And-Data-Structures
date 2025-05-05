@@ -1,33 +1,20 @@
 package recursive_binary_search
 
-/**
- * Recursively searches for a target element in a sorted slice using the Binary Search algorithm.
- * @param slice []int - The sorted slice to search in
- * @param target int - The target element to search for
- * @param start int - The start index of the current search range
- * @param end int - The end index of the current search range
- * @returns int - The index of the target element if found, otherwise -1
- */
+// RecursiveBinarySearch performs a recursive binary search on a sorted array of integers
+func RecursiveBinarySearch(arr []int, x, low, high int) int {
+	mid := low + (high-low)/2
 
-func RecursiveBinarySearch(slice []int, target, start, end int) int {
-	// Calculate the middle index of the current search range
-	middle := (start + end) / 2
-
-	// Return the index of the target element if found
-	if slice[middle] == target {
-		return middle
+	if arr[mid] == x {
+		return mid
 	}
 
-	// If the middle element is greater than the target, search in the left half
-	if slice[middle] > target {
-		return RecursiveBinarySearch(slice, target, start, middle-1)
+	if arr[mid] > x {
+		return RecursiveBinarySearch(arr, x, low, mid-1)
 	}
 
-	// If the middle element is less than the target, search in the right half
-	if slice[middle] < target {
-		return RecursiveBinarySearch(slice, target, middle+1, end)
+	if arr[mid] < x {
+		return RecursiveBinarySearch(arr, x, mid+1, high)
 	}
 
-	// Return -1 if the target element is not found
 	return -1
 }
