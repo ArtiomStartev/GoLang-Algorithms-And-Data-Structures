@@ -1,39 +1,28 @@
 package depth_first_search
 
-/**
- * Performs Depth-First Search on a graph starting from a specified vertex.
- * @param graph map[string][]string - The graph represented as an adjacency list
- * @param vertex string - The vertex to start the search from
- * @param traversalOrder []string - Slice to store the DFS traversal order
- * @param visited map[string]bool - Map to keep track of visited vertices
- */
+type GraphNode[T any] struct {
+	Value     T
+	Neighbors []*GraphNode[T]
+}
 
-func dfs(graph map[string][]string, vertex string, traversalOrder []string, visited map[string]bool) []string {
-	traversalOrder = append(traversalOrder, vertex) // Add the current vertex to the traversal order
-	visited[vertex] = true                          // Mark the current vertex as visited
+// DFS performs a depth-first search (DFS) on a graph represented by nodes
+func DFS[T any](startNode *GraphNode[T]) []T {
+	var traversalOrder []T
+	visited := make(map[*GraphNode[T]]bool)
 
-	// Get the neighbors of the current vertex from the graph
-	neighbors := graph[vertex]
+	return dfsTraversal[T](startNode, visited, traversalOrder)
+}
 
-	// Visit all adjacent vertices that have not been visited
-	for _, neighbor := range neighbors {
+// dfsTraversal recursively traverses the graph in depth-first order
+func dfsTraversal[T any](node *GraphNode[T], visited map[*GraphNode[T]]bool, traversalOrder []T) []T {
+	visited[node] = true
+	traversalOrder = append(traversalOrder, node.Value)
+
+	for _, neighbor := range node.Neighbors {
 		if !visited[neighbor] {
-			traversalOrder = dfs(graph, neighbor, traversalOrder, visited)
+			traversalOrder = dfsTraversal[T](neighbor, visited, traversalOrder)
 		}
 	}
 
-	// Return the complete traversal order
 	return traversalOrder
-}
-
-// Function to perform DFS traversal on the graph
-func dfsTraversal(graph map[string][]string, startVertex string) []string {
-	// Initialize a slice to store the DFS traversal order
-	var traversalOrder []string
-
-	// Initialize a map to keep track of visited vertices
-	visited := make(map[string]bool)
-
-	// Perform DFS traversal from the start vertex
-	return dfs(graph, startVertex, traversalOrder, visited)
 }
