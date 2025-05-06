@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="adjusted graph algorithms">
+    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="refactor caching and tree sum algorithms for clarity and consistency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/cache/cache.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/independent_set/independent_set.go" beforeDir="false" afterPath="$PROJECT_DIR$/independent_set/independent_set.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iterative_tree_sum/iterative_tree_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/iterative_tree_sum/iterative_tree_sum.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kruskal (MST)/kruskal (MST).go" beforeDir="false" afterPath="$PROJECT_DIR$/kruskal (MST)/kruskal (MST).go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursive_tree_sum/recursive_tree_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/recursive_tree_sum/recursive_tree_sum.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +202,7 @@
       <workItem from="1744315047790" duration="112000" />
       <workItem from="1746082098305" duration="102000" />
       <workItem from="1746460600950" duration="1650000" />
-      <workItem from="1746506151952" duration="6717000" />
+      <workItem from="1746506151952" duration="9043000" />
     </task>
     <task id="LOCAL-00001" summary="adjusted search algorithms">
       <option name="closed" value="true" />
@@ -240,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746509727400</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor caching and tree sum algorithms for clarity and consistency">
+      <option name="closed" value="true" />
+      <created>1746520818999</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746520818999</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +256,8 @@
     <MESSAGE value="adjusted search algorithms" />
     <MESSAGE value="adjusted sort algorithms" />
     <MESSAGE value="adjusted graph algorithms" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted graph algorithms" />
+    <MESSAGE value="refactor caching and tree sum algorithms for clarity and consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor caching and tree sum algorithms for clarity and consistency" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

@@ -4,43 +4,35 @@ import (
 	"sort"
 )
 
-type GraphEdge struct {
+type Graph map[string]map[string]int
+
+type Edge struct {
 	Source      string
 	Destination string
 	Weight      int
 }
 
-/**
- * Finds the Minimum Spanning Tree (MST) of a weighted, connected, undirected graph using Kruskal's Algorithm.
- * @param graph map[string]map[string]int - The graph represented as an adjacency list.
- * @returns []GraphEdge - A slice representing the edges of the Minimum Spanning Tree.
- */
-func findMinimumSpanningTree(graph map[string]map[string]int) []GraphEdge {
-	// Step 1: Sort all edges
+type DisjointSet map[string]string
+
+// Kruskal finds the Minimum Spanning Tree (MST) of a graph using Kruskal's algorithm
+func Kruskal(graph Graph) []Edge {
 	edges := getSortedEdges(graph)
 
-	// Step 2: Initialize disjoint set
-	parent := initializeDisjointSet(graph)
+	parent := initDisjointSet(graph)
 
-	// Step 3: Find MST edges
 	return findMST(edges, parent)
 }
 
-/**
- * Sorts all edges of the graph in increasing order of their weight.
- * @param graph map[string]map[string]int - The graph represented as an adjacency list.
- * @returns []GraphEdge - A slice representing the sorted edges.
- */
-func getSortedEdges(graph map[string]map[string]int) []GraphEdge {
-	var edges []GraphEdge
+// getSortedEdges retrieves and sorts the edges of the graph
+func getSortedEdges(graph Graph) []Edge {
+	var edges []Edge
 
 	for src, neighbors := range graph {
 		for dest, weight := range neighbors {
-			edges = append(edges, GraphEdge{src, dest, weight})
+			edges = append(edges, Edge{src, dest, weight})
 		}
 	}
 
-	// Sort edges by weight
 	sort.Slice(edges, func(i, j int) bool {
 		return edges[i].Weight < edges[j].Weight
 	})
@@ -48,30 +40,18 @@ func getSortedEdges(graph map[string]map[string]int) []GraphEdge {
 	return edges
 }
 
-/**
- * Initializes the disjoint set data structure.
- * @param graph map[string]map[string]int - The graph represented as an adjacency list.
- * @returns map[string]string - A map representing the disjoint set.
- */
-func initializeDisjointSet(graph map[string]map[string]int) map[string]string {
-	parent := make(map[string]string)
-
-	for vertex, _ := range graph {
-		// Each vertex is its own parent initially
-		parent[vertex] = vertex
+// initDisjointSet initializes the disjoint set for Kruskal's algorithm
+func initDisjointSet(graph Graph) DisjointSet {
+	parent := make(DisjointSet)
+	for node := range graph {
+		parent[node] = node
 	}
-
 	return parent
 }
 
-/**
- * Finds the Minimum Spanning Tree (MST) edges using Kruskal's Algorithm.
- * @param edges []GraphEdge - A slice representing all the edges of the graph sorted in increasing order of their weight.
- * @param parent map[string]string - The disjoint set data structure.
- * @returns []GraphEdge - A slice representing the edges of the Minimum Spanning Tree.
- */
-func findMST(edges []GraphEdge, parent map[string]string) []GraphEdge {
-	var mstEdges []GraphEdge
+// findMST finds the Minimum Spanning Tree (MST) using Kruskal's algorithm
+func findMST(edges []Edge, parent DisjointSet) []Edge {
+	var mstEdges []Edge
 
 	for _, edge := range edges {
 		srcParent := findParent(parent, edge.Source)
@@ -86,39 +66,23 @@ func findMST(edges []GraphEdge, parent map[string]string) []GraphEdge {
 	return mstEdges
 }
 
-/**
- * Finds the parent of a vertex in the disjoint set.
- * @param parent map[string]string - The disjoint set data structure.
- * @param vertex string - The vertex whose parent needs to be found.
- * @returns string - The parent vertex.
- */
-func findParent(parent map[string]string, vertex string) string {
-	// Base case: vertex is its own parent
-	if parent[vertex] == vertex {
-		return vertex
+// findParent finds the root of the disjoint set containing the node
+func findParent(parent DisjointSet, node string) string {
+	if parent[node] == node {
+		return node
 	}
-	// Recursively find parent
-	return findParent(parent, parent[vertex])
+	return findParent(parent, parent[node])
 }
 
-/**
- * Performs the union operation in the disjoint set.
- * @param parent map[string]string - The disjoint set data structure.
- * @param x string - The first vertex.
- * @param y string - The second vertex.
- */
-func union(parent map[string]string, x, y string) {
-	xRoot := findParent(parent, x)
-	yRoot := findParent(parent, y)
-	parent[xRoot] = yRoot // Set parent of xRoot to yRoot
+// union merges two sets in the disjoint set
+func union(parent DisjointSet, src, dest string) {
+	srcRoot := findParent(parent, src)
+	destRoot := findParent(parent, dest)
+	parent[srcRoot] = destRoot
 }
 
-/**
- * Calculates the total cost of the Minimum Spanning Tree (MST).
- * @param mst []GraphEdge - The Minimum Spanning Tree represented as a slice of edges.
- * @returns int - The total cost of the Minimum Spanning Tree.
- */
-func calculateMSTCost(mst []GraphEdge) int {
+// calculateMSTCost calculates the total cost of the MST
+func calculateMSTCost(mst []Edge) int {
 	var totalCost int
 	for _, edge := range mst {
 		totalCost += edge.Weight
