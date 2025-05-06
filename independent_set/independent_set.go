@@ -4,50 +4,43 @@ import (
 	"math"
 )
 
-/**
- * Finds a maximal independent set in a graph.
- * @param graph map[string][]string - The graph represented as an adjacency list.
- * @returns []string - A slice representing the vertices of a maximal independent set.
- */
+type Graph map[string][]string
 
-func findMaximalIndependentSet(graph map[string][]string) []string {
-	// Initialize an empty slice for the independent set
+// MaximumIndependentSet finds the maximum independent set of a graph using a greedy approach
+func MaximumIndependentSet(graph Graph) []string {
 	var independentSet []string
 
 	for len(graph) > 0 {
-		// Step 1: Select a vertex of minimum degree
-		var minDegreeVertex string
-		minDegree := math.MaxInt64 // Initialize to the maximum integer value
+		var minDegreeNode string
+		minDegree := math.MaxInt64
 
-		for vertex, neighbors := range graph {
+		for node, neighbors := range graph {
 			if len(neighbors) < minDegree {
-				minDegreeVertex = vertex
+				minDegreeNode = node
 				minDegree = len(neighbors)
 			}
 		}
 
-		// Append the selected vertex to the vertex cover slice
-		independentSet = append(independentSet, minDegreeVertex)
+		independentSet = append(independentSet, minDegreeNode)
 
-		// Step 2: Remove the selected vertex and its neighborhood from the graph
-		for _, neighbor := range graph[minDegreeVertex] {
-			for _, vertex := range graph[neighbor] {
-				graph[vertex] = filter(graph[vertex], neighbor)
+		for _, neighbor := range graph[minDegreeNode] {
+			for _, neighborOfNeighbor := range graph[neighbor] {
+				graph[neighborOfNeighbor] = filter(graph[neighborOfNeighbor], neighbor)
 			}
-			delete(graph, neighbor) // Remove the adjacent vertices
+			delete(graph, neighbor)
 		}
-		delete(graph, minDegreeVertex) // Remove the selected vertex
+		delete(graph, minDegreeNode)
 	}
 
 	return independentSet
 }
 
-// filter removes all instances of target from slice
-func filter(slice []string, target string) []string {
-	result := []string{}
-	for _, item := range slice {
-		if item != target {
-			result = append(result, item)
+// filter removes all occurrences of x from arr
+func filter(arr []string, x string) []string {
+	var result []string
+	for _, val := range arr {
+		if val != x {
+			result = append(result, val)
 		}
 	}
 

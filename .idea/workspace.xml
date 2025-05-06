@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="adjusted search algorithms">
-      <change afterPath="$PROJECT_DIR$/merge_sort/merge_sort.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+    <list default="true" id="c570c425-b4e3-47d7-8371-b71b362f83e7" name="Changes" comment="adjusted graph algorithms">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm_dijkstra/algorithm_dijkstra.go" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_dijkstra/algorithm_dijkstra.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bubble_sort/bubble_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/bubble_sort/bubble_sort.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cache/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/cache/cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/independent_set/independent_set.go" beforeDir="false" afterPath="$PROJECT_DIR$/independent_set/independent_set.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iterative_tree_sum/iterative_tree_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/iterative_tree_sum/iterative_tree_sum.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kruskal (MST)/kruskal (MST).go" beforeDir="false" afterPath="$PROJECT_DIR$/kruskal (MST)/kruskal (MST).go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prim (MST)/prim (MST).go" beforeDir="false" afterPath="$PROJECT_DIR$/prim (MST)/prim (MST).go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quick_sort/quick_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/quick_sort/quick_sort.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selection_sort/selection_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/selection_sort/selection_sort.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursive_tree_sum/recursive_tree_sum.go" beforeDir="false" afterPath="$PROJECT_DIR$/recursive_tree_sum/recursive_tree_sum.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +205,8 @@
       <workItem from="1728586180219" duration="4120000" />
       <workItem from="1744315047790" duration="112000" />
       <workItem from="1746082098305" duration="102000" />
-      <workItem from="1746460600950" duration="669000" />
+      <workItem from="1746460600950" duration="1650000" />
+      <workItem from="1746506151952" duration="6717000" />
     </task>
     <task id="LOCAL-00001" summary="adjusted search algorithms">
       <option name="closed" value="true" />
@@ -220,7 +216,31 @@
       <option name="project" value="LOCAL" />
       <updated>1746448766668</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adjusted sort algorithms">
+      <option name="closed" value="true" />
+      <created>1746474679016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746474679016</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adjusted graph algorithms">
+      <option name="closed" value="true" />
+      <created>1746507778656</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746507778656</updated>
+    </task>
+    <task id="LOCAL-00004" summary="adjusted graph algorithms">
+      <option name="closed" value="true" />
+      <created>1746509727400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746509727400</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +250,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <MESSAGE value="adjusted search algorithms" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted search algorithms" />
+    <MESSAGE value="adjusted sort algorithms" />
+    <MESSAGE value="adjusted graph algorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted graph algorithms" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
