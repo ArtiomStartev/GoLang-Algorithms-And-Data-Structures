@@ -4,30 +4,27 @@ import (
 	"math"
 )
 
-type Node struct {
+type Graph map[string]map[string]int
+
+type Edge struct {
 	Source      string
 	Destination string
 	Weight      int
 }
 
-func findPrimMST(graph map[string]map[string]int) []Node {
-	var mst []Node
-
-	vertices := make([]string, 0, len(graph))
-	for vertex, _ := range graph {
-		vertices = append(vertices, vertex)
-	}
-
+// Prim finds the Minimum Spanning Tree (MST) of a graph using Prim's algorithm
+func Prim(graph Graph, startNode string) []Edge {
+	var mst []Edge
 	visited := make(map[string]bool)
-	visited[vertices[0]] = true
+	visited[startNode] = true
 
-	for len(visited) < len(vertices) {
-		minEdge := Node{"", "", math.MaxInt64}
+	for len(visited) < len(graph) {
+		minEdge := Edge{Weight: math.MaxInt64}
 
-		for vertex := range visited {
-			for neighbor, weight := range graph[vertex] {
-				if !visited[neighbor] && weight < minEdge.Weight {
-					minEdge = Node{vertex, neighbor, weight}
+		for src := range visited {
+			for dest, weight := range graph[src] {
+				if !visited[dest] && weight < minEdge.Weight {
+					minEdge = Edge{src, dest, weight}
 				}
 			}
 		}
@@ -39,7 +36,8 @@ func findPrimMST(graph map[string]map[string]int) []Node {
 	return mst
 }
 
-func calculatePrimMSTCost(mst []Node) int {
+// calculatePrimMSTCost calculates the total cost of the MST
+func calculatePrimMSTCost(mst []Edge) int {
 	var totalCost int
 	for _, edge := range mst {
 		totalCost += edge.Weight

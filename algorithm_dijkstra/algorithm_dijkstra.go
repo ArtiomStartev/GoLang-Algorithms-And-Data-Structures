@@ -5,18 +5,14 @@ import (
 	"sort"
 )
 
-/**
- * Performs Dijkstra's algorithm to find the shortest path from a start node to all other nodes in the graph.
- * @param graph map[string]map[string]int - The graph represented as an adjacency list with edge weights
- * @param startNode string - The starting node
- * @returns map[string]int - An object containing the shortest distances from the start node to all other nodes
- */
+type Graph map[string]map[string]int
+type Distances map[string]int
 
-func dijkstra(graph map[string]map[string]int, startNode string) map[string]int {
+// Dijkstra finds the shortest path from the start node to all other nodes in the graph using Dijkstra's algorithm
+func Dijkstra(graph Graph, startNode string) Distances {
 	var queue []string
+	distances := make(Distances)
 
-	// Initialize distances map with all nodes set to the maximum integer value except the start node
-	distances := make(map[string]int)
 	for node := range graph {
 		queue = append(queue, node)
 
@@ -27,28 +23,22 @@ func dijkstra(graph map[string]map[string]int, startNode string) map[string]int 
 		}
 	}
 
-	// Sort the queue based on distances
 	sort.Slice(queue, func(i, j int) bool {
 		return distances[queue[i]] < distances[queue[j]]
 	})
 
-	// While the queue is not empty
 	for len(queue) > 0 {
-		// Dequeue the node from the queue
-		currentNode := queue[0]
+		currNode := queue[0]
 		queue = queue[1:]
 
-		// Visit each neighbor of the current node
-		for neighbor, distanceToNeighbor := range graph[currentNode] {
-			totalDistance := distances[currentNode] + distanceToNeighbor
+		for neighbor, distanceToNeighbor := range graph[currNode] {
+			totalDistance := distances[currNode] + distanceToNeighbor
 
-			// Update distance if a shorter path is found
 			if totalDistance < distances[neighbor] {
 				distances[neighbor] = totalDistance
 			}
 		}
 
-		// Sort the queue again based on updated distances
 		sort.Slice(queue, func(i, j int) bool {
 			return distances[queue[i]] < distances[queue[j]]
 		})
