@@ -15,22 +15,22 @@ type Edge struct {
 // Prim finds the Minimum Spanning Tree (MST) of a graph using Prim's algorithm
 func Prim(graph Graph, startNode string) []Edge {
 	var mst []Edge
-	visited := make(map[string]bool)
-	visited[startNode] = true
+	visited := make(map[string]struct{}, len(graph))
+	visited[startNode] = struct{}{}
 
 	for len(visited) < len(graph) {
 		minEdge := Edge{Weight: math.MaxInt64}
 
 		for src := range visited {
 			for dest, weight := range graph[src] {
-				if !visited[dest] && weight < minEdge.Weight {
+				if _, ok := visited[dest]; !ok && weight < minEdge.Weight {
 					minEdge = Edge{src, dest, weight}
 				}
 			}
 		}
 
 		mst = append(mst, minEdge)
-		visited[minEdge.Destination] = true
+		visited[minEdge.Destination] = struct{}{}
 	}
 
 	return mst

@@ -1,8 +1,9 @@
 package dijkstra
 
 import (
+	"cmp"
 	"math"
-	"sort"
+	"slices"
 )
 
 type Graph map[string]map[string]int
@@ -10,8 +11,8 @@ type Distances map[string]int
 
 // Dijkstra finds the shortest path from the start node to all other nodes in the graph using Dijkstra's algorithm
 func Dijkstra(graph Graph, startNode string) Distances {
-	var queue []string
-	distances := make(Distances)
+	queue := make([]string, 0, len(graph))
+	distances := make(Distances, len(graph))
 
 	for node := range graph {
 		queue = append(queue, node)
@@ -23,8 +24,8 @@ func Dijkstra(graph Graph, startNode string) Distances {
 		}
 	}
 
-	sort.Slice(queue, func(i, j int) bool {
-		return distances[queue[i]] < distances[queue[j]]
+	slices.SortFunc(queue, func(a, b string) int {
+		return cmp.Compare(distances[a], distances[b])
 	})
 
 	for len(queue) > 0 {
@@ -39,8 +40,8 @@ func Dijkstra(graph Graph, startNode string) Distances {
 			}
 		}
 
-		sort.Slice(queue, func(i, j int) bool {
-			return distances[queue[i]] < distances[queue[j]]
+		slices.SortFunc(queue, func(a, b string) int {
+			return cmp.Compare(distances[a], distances[b])
 		})
 	}
 
